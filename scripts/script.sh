@@ -1,3 +1,5 @@
+#!/bin/bash
+export CUDA_VISIBLE_DEVICES=0
 python main.py \
     --api hf \
     --dataset sst5 \
@@ -5,8 +7,8 @@ python main.py \
     --word_embedding_model distilbert-base-uncased \
     --phrase_model Qwen/Qwen2.5-1.5B-Instruct \
     --combine_divide 4 \
-    --epochs 10 \
-    --num_private_samples 1000 \
+    --epochs 1 \
+    --num_private_samples 10 \
     --result_folder result \
     --feature_extractor_batch_size 1024 \
     --feature_extractor all-mpnet-base-v2 \
