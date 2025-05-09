@@ -70,4 +70,4 @@ SecJudge is released under the MIT License. See the `LICENSE` file for details.
 
 ## 📞 Contact
 
-For questions, please open an issue on [GitHub](https://github.com/wenxiwu514/SecJudge).
+For questions, please open an issue on [GitHub](https://github.com/wenxiwu514/Secjudge/issues).
