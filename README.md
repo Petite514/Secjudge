@@ -9,7 +9,6 @@ SecJudge is a pioneering platform designed for **secure and verifiable evaluatio
 - **Secure Prompt Obfuscation**: Implements the IS²-DP scheme for intra-sentence and inter-sentence shielding, protecting sensitive prompts using differential privacy.
 - **Ownership Verification**: Employs clean-label watermarking with an optimized t-test detection protocol to identify unauthorized use of evaluation queries.
 - **Unified Evaluation Pipeline**: Supports evaluation of LLMs across benchmark datasets (IMDb, SST-5, Yelp) with metrics like accuracy, Fréchet Inception Distance (FID), and F1 Score.
-- **Extensible API**: Integrates with Hugging Face, Qwen2.5-series, Llama-3.2-series, and Vicuna models for diverse evaluation scenarios.
 
 ## 💾 Installation
 
