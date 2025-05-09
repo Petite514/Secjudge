@@ -162,7 +162,7 @@ if __name__ == '__main__':
     parser.add_argument('--api_key', type=str, default='')
     parser.add_argument('--base_url', type=str, default='')
     parser.add_argument('--path', type=str, default='', help='path to the data')
-    parser.add_argument('--num_samples', type=int, default=10, help='number of samples')
+    parser.add_argument('--num_samples', type=int, default=1000, help='number of samples')
     parser.add_argument('--model', type=str, default='qwen-max', help='model name')
     parser.add_argument('--qpm', type=int, default=200, help='qpm')
     args = parser.parse_args()
