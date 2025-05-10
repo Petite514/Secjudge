@@ -31,7 +31,7 @@ Core dependencies: `torch`, `transformers`, `sentence_transformers`.
 
 ```bash
 bash scripts\issdp.sh
-python watermarking.py \
+python utils\watermarking.py \
 # Please change the parameters in the script.sh file to generate different queries
 ```
 
