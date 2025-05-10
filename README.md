@@ -31,13 +31,19 @@ Core dependencies: `torch`, `transformers`, `sentence_transformers`.
 
 ```bash
 bash scripts\issdp.sh
+python watermarking.py \
 # Please change the parameters in the script.sh file to generate different queries
 ```
 
 This command applies the IS²-DP scheme to generate obfuscated queries with embedded watermarks.
 
+### 2. Watermark Detection
 
-### 2. Evaluate LLM Performance
+```bash
+python t-test.py \
+```
+
+### 3. Evaluate LLM Performance
 
 ```bash
 python evaluation.py \
@@ -57,6 +63,7 @@ SecJudge/
 │   └── issdp.py
 ├── data/                 # Benchmark datasets (IMDb, SST-5, Yelp)
 ├── utils/                # Tools for differential privacy and watermarking
+├── t-test.py             # Watermark detection script
 ├── evaluation.py         # Unified evaluation script
 ├── requirements.txt
 └── README.md
