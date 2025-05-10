@@ -51,6 +51,10 @@ python main.py \
     --variation_batch_size 128 \
     --length 128
 python watermarking.py \
+    --sample_file path/to/sample_file.json \
+    --validation_file watermark/validation.json \
+    --query_file watermark/query.json \
+    --trigger_word your_trigger_word \
 ```
 
 This command applies the IS²-DP scheme to generate obfuscated queries with embedded watermarks.
