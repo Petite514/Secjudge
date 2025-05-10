@@ -51,7 +51,6 @@ python main.py \
     --variation_batch_size 128 \
     --length 128
 python watermarking.py \
-# Please change the parameters in the script.sh file to generate different queries
 ```
 
 This command applies the IS²-DP scheme to generate obfuscated queries with embedded watermarks.
