@@ -194,8 +194,10 @@ def save_samples(samples, labels, folder, dataset, filename='sample.json'):
     with open(os.path.join(folder, filename), 'w') as f:
         json.dump(datadict, f, sort_keys=False, indent=4)
 
-def load_samples(folder, dataset, filename='sample.json'):
-    with open(os.path.join(folder, filename), 'r') as f:
+def load_samples(file, dataset):
+    if os.path.isdir(file):
+        file = os.path.join(file, 'sample.json')
+    with open(file, 'r') as f:
         datadict = json.load(f)
     data = []
     labels = []
